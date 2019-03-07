@@ -5,7 +5,7 @@ class Todos extends Component {
   render() {
     console.log(this.props.todos);
     return this.props.todos.map(todo => (
-      <TodoItem />
+      <TodoItem todo={todo} />
       // todo object. Dot notation to acess property
     ));
     // just like a forEach
