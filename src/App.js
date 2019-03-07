@@ -4,13 +4,25 @@ import Todos from "./components/Todos";
 import "./App.css";
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Todos />
-      </div>
-    );
-  }
+  state = {
+    todos: [
+      {
+        id: 1,
+        title: "Take out trash",
+        completed: false
+      },
+      {
+        id: 2,
+        title: "Dinner",
+        completed: false
+      },
+      {
+        id: 3,
+        title: "Meeting",
+        completed: false
+      }
+    ]
+  };
 }
 
 export default App;
